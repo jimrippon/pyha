@@ -1,0 +1,13 @@
+#!/usr/bin/rrdcgi
+<HTML>
+<HEAD><TITLE>RRDCGI Demo</TITLE></HEAD>
+<BODY>
+<H1>RRDCGI Example Page</H1>
+<P>
+<RRD::GRAPH demo.png --lazy --title="Temperatures"
+ DEF:tempa=/home/jrippon/pytsl/db/temp.rrd:tempa:AVERAGE
+ LINE2:tempa#00a000:"D. Celsius">
+
+</P>
+</BODY>
+</HTML>
